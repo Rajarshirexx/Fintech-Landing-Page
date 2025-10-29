@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-turq: #2A8E9E; 
+  --color-primary: #E9F3F4;
+  --color-charcoal: #1D1E20;
+  --color-grayblue: #180D39;
+}
+
+
+html, body {
+  /* margin: 0; */
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', 'Arial', sans-serif;
+  overflow-x: hidden; 
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+  font-family: inherit;
+}
