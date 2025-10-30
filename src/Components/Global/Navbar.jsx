@@ -1,6 +1,6 @@
 export default function Navbar() {
   return (
-    <div className="h-20 px-6 sm:px-20  flex items-center justify-between bg-primary">
+    <div className="fixed top-0 left-0 right-0 h-20 px-6 sm:px-20  flex items-center justify-between bg-primary">
       <div className="flex items-center">
         <img src="" alt="" />
         <p className="sm:text-2xl text-xl font-semibold text-center">Finpay</p>
