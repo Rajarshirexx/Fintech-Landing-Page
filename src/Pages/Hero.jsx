@@ -41,7 +41,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 1, ease: "easeOut" }}
+        transition={{ duration: 1, ease: "easeOut", delay:0.7 }}
         className="hidden sm:flex w-3/6 items-center justify-center"
       >
         <div className="flex flex-col space-y-2 p-6 shadow-xl bg-white w-80 rounded-xl">
@@ -94,7 +94,7 @@ export default function Hero() {
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
-        transition={{ duration: 1, delay: 0.2, ease: "easeOut" }}
+        transition={{ duration: 0.7, delay: 1, ease: "easeOut" }}
       >
         <div className="h-4/5 bg-turq rounded-t-2xl p-4 text-white">
           <p className="text-xs">Credit Card</p>
