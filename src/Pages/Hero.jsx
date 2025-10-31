@@ -90,7 +90,7 @@ export default function Hero() {
 
      
       <motion.div
-        className="hidden sm:flex h-56 w-42 rounded-2xl shadow-md fixed top-38 right-7 lg:right-32 flex-col"
+        className="hidden sm:flex h-56 w-42 rounded-2xl shadow-md absolute top-38 right-7 lg:right-32 flex-col"
         initial={{ opacity: 0, y: 60 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, amount: 0.3 }}
