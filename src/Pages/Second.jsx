@@ -4,35 +4,35 @@ import bank from "../assets/bank.png";
 import shield from "../assets/shield.png";
 
 export default function Second() {
-  // Variants for staggered animations
+ 
   const textVariant = {
     hidden: { opacity: 0, x: -80 },
-    visible: { opacity: 1, x: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: { opacity: 1, x: 0, transition: { duration: 1, ease: "easeOut" } },
   };
 
   const cardContainer = {
     hidden: {},
     visible: {
       transition: {
-        staggerChildren: 0.25, // delay between cards
+        staggerChildren: 0.25, 
       },
     },
   };
 
   const cardVariant = {
     hidden: { opacity: 0, y: 60 },
-    visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } },
+    visible: { opacity: 1, y: 0, transition: { duration: 1, ease: "easeOut" } },
   };
 
   return (
     <div
-      className="min-h-[80vh] w-full flex items-center justify-center"
+      className="min-h-[80vh] w-full flex items-center justify-center mb-4 sm:mb-0"
       style={{
         background: `linear-gradient(to bottom, var(--tw-color-primary, #E9F3F4) 37.5%, #ffffff 37.5%)`,
       }}
     >
       <motion.div
-        className="min-h-[50vh] w-5/6 border rounded-xl border-gray-200 bg-white shadow-md sm:px-16 sm:py-12 p-8 space-y-3"
+        className="min-h-[50vh] w-5/6 border rounded-xl border-gray-200 bg-white shadow-xl sm:px-14 sm:py-12 p-8 space-y-3"
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
